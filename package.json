@@ -1,0 +1,14 @@
+{
+  "name": "Socket.io-React",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^7.6.0"
+  },
+  "scripts": {
+    "server": "cd server && nodemon server.js",
+    "client": "cd client && yarn dev",
+    "start": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
+  }
+}
